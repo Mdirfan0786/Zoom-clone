@@ -105,19 +105,19 @@ const addToHistory = async (req, res) => {
 
 // ---------- verifyToken ----------
 
-// const verifyToken = async (req, res) => {
-//   const { token } = req.body;
+const verifyToken = async (req, res) => {
+  const { token } = req.body;
 
-//   try {
-//     const user = await User.findOne({ token });
-//     if (!user) {
-//       return res.status(401).json({ message: "Invalid or expired token" });
-//     }
+  try {
+    const user = await User.findOne({ token });
+    if (!user) {
+      return res.status(401).json({ message: "Invalid or expired token" });
+    }
 
-//     return res.status(200).json({ valid: true });
-//   } catch (e) {
-//     return res.status(500).json({ message: `Error verifying token: ${e}` });
-//   }
-// };
+    return res.status(200).json({ valid: true });
+  } catch (e) {
+    return res.status(500).json({ message: `Error verifying token: ${e}` });
+  }
+};
 
 export { login, register, getUserHistory, addToHistory, verifyToken };
