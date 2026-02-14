@@ -18,6 +18,10 @@ app.use(cors());
 app.use(express.json({ limit: "40kb" }));
 app.use(express.urlencoded({ limit: "40kb", extended: true }));
 
+app.get("/", (req, res) => {
+  res.json({ message: "Server Running" });
+});
+
 app.use("/api/v1/users", userRoute);
 
 const start = async () => {
