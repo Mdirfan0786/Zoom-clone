@@ -19,7 +19,7 @@ app.use("/api/v1/users", userRoute);
 
 const start = async () => {
   const connectiondb = await mongoose.connect(
-    "mongodb+srv://rn555666777_db_user:CIswdeiTBX5RP0MH@apnavideocall2.wd4rkra.mongodb.net/"
+    "mongodb+srv://rn555666777_db_user:fZsx2javEPYxVWWs@apnazoom.wqfkobv.mongodb.net/apnaZoom?appName=apnaZoom",
   );
   console.log(`MONGO connected db host : ${connectiondb.connection.host}`);
 
