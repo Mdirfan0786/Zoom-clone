@@ -33,6 +33,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  // Handling Login
   const handleLogin = async (username, password) => {
     try {
       let request = await client.post("/login", {
