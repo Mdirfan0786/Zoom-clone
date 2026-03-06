@@ -93,8 +93,15 @@ npm start
 
 **MD IRFAN**
 
-- GitHub: https://github.com/Mdirfan0786
+---
+
+## 📬 Contact
+
+If you want to connect or collaborate with me:
+
+- **GitHub:** https://github.com/Mdirfan0786
+- **Portfolio:** https://apna-portfolio-drab.vercel.app/
 
 ---
 
-⭐ If you like this project, consider giving it a star!
+⭐ If you like this project, please consider giving it a **star** on GitHub!
